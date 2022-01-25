@@ -1,12 +1,48 @@
 <footer class="footer">
-  <div class="container">
-    <div class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
-    <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</div>
+  <div class="container-fullwidth">
+      <div class="row">
+          <div class="col-3"></div>
+          <div class="col-3">
+                <div class="text-muted">
+                    &copy; All rights reserved. <a href="https://nuwire.co/">Nuwire</a>
+                </div>
+          </div>
+          <div class="col-3">
+             <div  class="text-muted">
+                 <a href="/tos">Terms of Service</a> |
+                 <a href="/privacy">Privacy</a> |
+                 <a href="/cookies">Cookie Policy</a>
+             </div>
+          </div>
+      </div>
   </div>
 </footer>
+
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21273271.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/61e59104f7cf527e84d292a7/1fpkbsugj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
 
 <!-- Bootstrap core JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 {{- range .Site.Params.custom_js -}}
   <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+
+
 {{ end }}
